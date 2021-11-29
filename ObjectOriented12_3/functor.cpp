@@ -18,7 +18,7 @@ void bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
 //2. operator() 를 구현한다. 3. Fuctor는 클래스 형태와 비슷하다.)
 class compGreater {
 public:
-	bool operator()(int x, int y) const {
+	bool operator()(int x, int y) {
 		return x > y;
 	}
 };
@@ -26,7 +26,7 @@ public:
 //operator()를 구현한다. 3. Fuctor는 클래스 형태와 비슷하다.)
 class compLess {
 public:
-	bool operator()(int x, int y) const {
+	bool operator()(int x, int y) {
 		return x < y;
 	}
 };
